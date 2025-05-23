@@ -2,6 +2,8 @@ FROM julia:1.10.6
 
 RUN apt-get update && apt-get install -y \
     build-essential \
+    python3 \
+    python3-pip \
     unzip \
     procps \
     && rm -rf /var/lib/apt/lists/*
